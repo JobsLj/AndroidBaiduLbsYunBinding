@@ -1,0 +1,444 @@
+﻿<metadata>
+  <!--
+  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
+  
+  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
+  -->
+
+
+  <attr path="/api/package[@name='com.baidu.mapapi']/class[@name='VersionInfo']/field[@name='VERSION_INFO']"
+    name="managedName">THE_VERSION_INFO</attr>
+
+  <!--关联3-->
+  <attr path="/api/package[@name='com.baidu.mapapi.map']/interface[@name='BaiduMap.OnMapStatusChangeListener']/method[@name='onMapStatusChangeStart' and count(parameter)=2 and parameter[1][@type='com.baidu.mapapi.map.MapStatus'] and parameter[2][@type='int']]/parameter[@name='p0']"
+            name="name">api1</attr>
+  <attr path="/api/package[@name='com.baidu.mapapi.map']/interface[@name='BaiduMap.OnMapStatusChangeListener']/method[@name='onMapStatusChangeStart' and count(parameter)=2 and parameter[1][@type='com.baidu.mapapi.map.MapStatus'] and parameter[2][@type='int']]/parameter[@name='p1']"
+          name="name">api2</attr>
+  <attr path="/api/package[@name='com.baidu.mapapi.map']/interface[@name='BaiduMap.OnMapStatusChangeListener']/method[@name='onMapStatusChangeStart' and count(parameter)=2 and parameter[1][@type='com.baidu.mapapi.map.MapStatus'] and parameter[2][@type='int']]"
+    name="managedName">OnMapStatusChangeStart2</attr>
+  <!--关联3-->
+
+  <!--关联2-->
+  <remove-node path="/api/package[@name='com.baidu.platform.comapi.wnplatform.walkmap']/class[@name='WNaviBaiduMap']/method[@name='getId' and count(parameter)=0]"
+    />
+  <remove-node path="/api/package[@name='com.baidu.platform.comapi.wnplatform.walkmap']/class[@name='WNaviBaiduMap']/method[@name='setId' and count(parameter)=1 and parameter[1][@type='long']]"
+    />
+  <!--关联2-->
+
+  <attr path="/api/package[@name='com.baidu.mapapi.animation']/class[@name='Animation']"
+    name="managedName">TheAnimation</attr>
+
+  <attr path="/api/package[@name='com.baidu.mapsdkplatform.comapi.a']/class[@name='c']"
+    name="obfuscated">false</attr>
+
+
+  <attr path="/api/package[@name='com.baidu.mapapi.map']/interface[@name='Overlay.a']"
+    name="obfuscated">false</attr>
+
+  <!--h is an enum-->
+  <attr path="/api/package[@name='com.baidu.mapsdkplatform.comapi.map']/class[@name='h']"
+    name="obfuscated">false</attr>
+  <attr path="/api/package[@name='com.baidu.mapsdkplatform.comapi.map']/class[@name='h']/field[@name='h']"
+    name="managedName">TheH</attr>
+  <!--h is an enum-->
+
+  <attr path="/api/package[@name='com.baidu.platform.comapi.walknavi.e']/interface[@name='a']"
+      name="obfuscated">false</attr>
+
+  <!--relate-->
+  <attr path="/api/package[@name='com.baidu.platform.comapi.walknavi']/class[@name='b']"
+        name="obfuscated">false</attr>
+  <attr path="/api/package[@name='com.baidu.platform.comapi.walknavi']/class[@name='b']/field[@name='b']"
+    name="managedName">TheB</attr>
+  <!--relate-->
+
+  <!--relate-->
+  <attr path="/api/package[@name='com.baidu.platform.comapi.walknavi']/class[@name='b']/method[@name='e' and count(parameter)=0]"
+    name="managedName">LittleE</attr>
+  <attr path="/api/package[@name='com.baidu.platform.comapi.walknavi']/class[@name='b']/method[@name='E' and count(parameter)=0]"
+    name="managedName">BigE</attr>
+
+  <attr path="/api/package[@name='com.baidu.platform.comapi.walknavi']/class[@name='b']/method[@name='f' and count(parameter)=0]"
+    name="managedName">LittleF</attr>
+  <attr path="/api/package[@name='com.baidu.platform.comapi.walknavi']/class[@name='b']/method[@name='F' and count(parameter)=0]"
+    name="managedName">BigF</attr>
+
+  <attr path="/api/package[@name='com.baidu.platform.comapi.walknavi']/class[@name='b']/method[@name='g' and count(parameter)=0]"
+    name="managedName">LittleG</attr>
+  <attr path="/api/package[@name='com.baidu.platform.comapi.walknavi']/class[@name='b']/method[@name='G' and count(parameter)=0]"
+    name="managedName">BigG</attr>
+
+  <attr path="/api/package[@name='com.baidu.platform.comapi.walknavi']/class[@name='b']/method[@name='h' and count(parameter)=0]"
+    name="managedName">LittleH</attr>
+  <attr path="/api/package[@name='com.baidu.platform.comapi.walknavi']/class[@name='b']/method[@name='H' and count(parameter)=0]"
+    name="managedName">BigH</attr>
+
+  <attr path="/api/package[@name='com.baidu.platform.comapi.walknavi']/class[@name='b']/method[@name='i' and count(parameter)=0]"
+    name="managedName">LittleI</attr>
+  <attr path="/api/package[@name='com.baidu.platform.comapi.walknavi']/class[@name='b']/method[@name='I' and count(parameter)=0]"
+    name="managedName">BigI</attr>
+
+  <attr path="/api/package[@name='com.baidu.platform.comapi.walknavi']/class[@name='b']/method[@name='o' and count(parameter)=0]"
+    name="managedName">LittleO</attr>
+  <attr path="/api/package[@name='com.baidu.platform.comapi.walknavi']/class[@name='b']/method[@name='O' and count(parameter)=0]"
+    name="managedName">BigO</attr>
+
+  <attr path="/api/package[@name='com.baidu.platform.comapi.walknavi']/class[@name='b']/method[@name='p' and count(parameter)=0]"
+    name="managedName">LittleP</attr>
+  <attr path="/api/package[@name='com.baidu.platform.comapi.walknavi']/class[@name='b']/method[@name='P' and count(parameter)=0]"
+    name="managedName">BigP</attr>
+
+  <attr path="/api/package[@name='com.baidu.platform.comapi.walknavi']/class[@name='b']/method[@name='q' and count(parameter)=0]"
+    name="managedName">LittleQ</attr>
+  <attr path="/api/package[@name='com.baidu.platform.comapi.walknavi']/class[@name='b']/method[@name='Q' and count(parameter)=0]"
+    name="managedName">BigQ</attr>
+  <!--relate-->
+
+  <attr path="/api/package[@name='com.baidu.platform.comapi.walknavi.g.b']/interface[@name='a']"
+          name="obfuscated">false</attr>
+
+  <attr path="/api/package[@name='com.baidu.platform.comapi.walknavi']/class[@name='a']"
+          name="obfuscated">false</attr>
+  <attr path="/api/package[@name='com.baidu.platform.comapi.walknavi']/class[@name='a']"
+      name="managedName">TheWalknaviA</attr>
+
+  <attr path="/api/package[@name='com.baidu.platform.comapi.walknavi']/class[@name='b']/method[@name='a' and count(parameter)=0]"
+    name="managedName">LittleA</attr>
+  <attr path="/api/package[@name='com.baidu.platform.comapi.walknavi']/class[@name='b']/method[@name='A' and count(parameter)=0]"
+    name="managedName">BigA</attr>
+
+  <remove-node path="/api/package[@name='com.baidu.mapsdkplatform.comjni.map.basemap']/class[@name='JNIBaseMap']/method[@name='Init' and count(parameter)=17]"
+               />
+
+  <attr path="/api/package[@name='com.baidu.platform.comapi.wnplatform.walkmap']/class[@name='d']"
+          name="obfuscated">false</attr>
+
+  <attr path="/api/package[@name='com.baidu.platform.comapi.walknavi']/class[@name='b']/method[@name='B' and count(parameter)=0]"
+    name="managedName">TheMethodB</attr>
+
+  <attr path="/api/package[@name='com.baidu.mapapi.map']/class[@name='l']"
+          name="obfuscated">false</attr>
+
+  <attr path="/api/package[@name='com.baidu.mapapi.map']/class[@name='l.a']"
+          name="obfuscated">false</attr>
+
+  <attr path="/api/package[@name='com.baidu.mapsdkplatform.comapi.map']/class[@name='j']"
+          name="obfuscated">false</attr>
+
+  <attr path="/api/package[@name='com.baidu.mapsdkplatform.comapi.map']/class[@name='MapRenderer']/method[@name='a' and count(parameter)=1 and parameter[1][@type='long']]"
+    name="managedName">TheA</attr>
+
+  <attr path="/api/package[@name='com.baidu.mapsdkplatform.comapi.map']/class[@name='MapRenderer']/field[@name='a']"
+    name="managedName">TheFieldA</attr>
+
+  <attr path="/api/package[@name='com.baidu.mapsdkplatform.comapi.map']/interface[@name='MapRenderer.a']"
+          name="obfuscated">false</attr>
+
+  <attr path="/api/package[@name='com.baidu.mapsdkplatform.comapi.map']/class[@name='e']"
+          name="obfuscated">false</attr>
+
+  <!--relate-->
+  <attr path="/api/package[@name='com.baidu.mapsdkplatform.comapi.map']/class[@name='e']/method[@name='c' and count(parameter)=1 and parameter[1][@type='boolean']]"
+    name="managedName">LittleC1</attr>
+  <attr path="/api/package[@name='com.baidu.mapsdkplatform.comapi.map']/class[@name='e']/method[@name='c' and count(parameter)=1 and parameter[1][@type='android.os.Bundle']]"
+    name="managedName">LittleC2</attr>
+  <attr path="/api/package[@name='com.baidu.mapsdkplatform.comapi.map']/class[@name='e']/method[@name='C' and count(parameter)=0]"
+    name="managedName">BigC</attr>
+  <attr path="/api/package[@name='com.baidu.mapsdkplatform.comapi.map']/class[@name='e']/method[@name='D' and count(parameter)=0]"
+    name="managedName">BigD</attr>
+  <attr path="/api/package[@name='com.baidu.mapsdkplatform.comapi.map']/class[@name='e']/method[@name='d' and count(parameter)=1 and parameter[1][@type='boolean']]"
+    name="managedName">LittleD1</attr>
+  <attr path="/api/package[@name='com.baidu.mapsdkplatform.comapi.map']/class[@name='e']/method[@name='d' and count(parameter)=1 and parameter[1][@type='android.os.Bundle']]"
+    name="managedName">LittleD2</attr>
+  <attr path="/api/package[@name='com.baidu.mapsdkplatform.comapi.map']/class[@name='e']/method[@name='G' and count(parameter)=0]"
+    name="managedName">BigG</attr>
+  <attr path="/api/package[@name='com.baidu.mapsdkplatform.comapi.map']/class[@name='e']/method[@name='g' and count(parameter)=1 and parameter[1][@type='boolean']]"
+    name="managedName">LittleG1</attr>
+  <attr path="/api/package[@name='com.baidu.mapsdkplatform.comapi.map']/class[@name='e']/method[@name='H' and count(parameter)=0]"
+    name="managedName">BigH</attr>
+  <attr path="/api/package[@name='com.baidu.mapsdkplatform.comapi.map']/class[@name='e']/method[@name='h' and count(parameter)=1 and parameter[1][@type='boolean']]"
+    name="managedName">LittleH1</attr>
+  <attr path="/api/package[@name='com.baidu.mapsdkplatform.comapi.map']/class[@name='e']/method[@name='J' and count(parameter)=0]"
+    name="managedName">BigJ</attr>
+  <attr path="/api/package[@name='com.baidu.mapsdkplatform.comapi.map']/class[@name='e']/method[@name='j' and count(parameter)=1 and parameter[1][@type='boolean']]"
+    name="managedName">LittleJ1</attr>
+  <attr path="/api/package[@name='com.baidu.mapsdkplatform.comapi.map']/class[@name='e']/method[@name='M' and count(parameter)=0]"
+    name="managedName">BigM</attr>
+  <attr path="/api/package[@name='com.baidu.mapsdkplatform.comapi.map']/class[@name='e']/method[@name='m' and count(parameter)=1 and parameter[1][@type='boolean']]"
+    name="managedName">LittleM1</attr>
+  <attr path="/api/package[@name='com.baidu.mapsdkplatform.comapi.map']/class[@name='e']/method[@name='N' and count(parameter)=0]"
+    name="managedName">BigN</attr>
+  <attr path="/api/package[@name='com.baidu.mapsdkplatform.comapi.map']/class[@name='e']/method[@name='n' and count(parameter)=1 and parameter[1][@type='boolean']]"
+    name="managedName">LittleN1</attr>
+
+  <attr path="/api/package[@name='com.baidu.mapsdkplatform.comapi.map']/class[@name='e']/method[@name='E' and count(parameter)=0]"
+    name="managedName">BigE</attr>
+  <attr path="/api/package[@name='com.baidu.mapsdkplatform.comapi.map']/class[@name='e']/method[@name='e' and count(parameter)=1 and parameter[1][@type='boolean']]"
+    name="managedName">LittleE1</attr>
+  <!--relate-->
+
+  <attr path="/api/package[@name='com.baidu.mapapi.map']/class[@name='l']"
+          name="obfuscated">false</attr>
+  <attr path="/api/package[@name='com.baidu.mapapi.map']/class[@name='l.a']"
+          name="obfuscated">false</attr>
+  <attr path="/api/package[@name='com.baidu.mapapi.map']/class[@name='l']"
+        name="visibility">public</attr>
+  <attr path="/api/package[@name='com.baidu.mapapi.map']/class[@name='l.a']"
+        name="visibility">public</attr>
+
+  <attr path="/api/package[@name='com.baidu.mapsdkplatform.comjni.map.basemap']/interface[@name='b']"
+    name="obfuscated">false</attr>
+
+  <attr path="/api/package[@name='com.baidu.mapsdkplatform.comapi.map']/class[@name='ab']"
+    name="obfuscated">false</attr>
+  <attr path="/api/package[@name='com.baidu.mapsdkplatform.comapi.map']/interface[@name='ai']"
+    name="obfuscated">false</attr>
+  <attr path="/api/package[@name='com.baidu.mapsdkplatform.comapi.map']/interface[@name='l']"
+    name="obfuscated">false</attr>
+  <attr path="/api/package[@name='com.baidu.mapsdkplatform.comapi.map']/interface[@name='o']"
+    name="obfuscated">false</attr>
+  <attr path="/api/package[@name='com.baidu.mapsdkplatform.comapi.map']/class[@name='z']"
+    name="obfuscated">false</attr>
+
+  <attr path="/api/package[@name='com.baidu.mapsdkplatform.comapi.map']/class[@name='ab.a']"
+    name="obfuscated">false</attr>
+
+  <attr path="/api/package[@name='com.baidu.mapsdkplatform.comapi.map']/class[@name='ab.a']"
+    name="managedName">TheClassA</attr>
+
+  <attr path="/api/package[@name='com.baidu.mapapi.map']/class[@name='WearMapView.a']"
+    name="obfuscated">false</attr>
+  <attr path="/api/package[@name='com.baidu.mapapi.map']/class[@name='WearMapView.a']"
+        name="visibility">public</attr>
+
+  <attr path="/api/package[@name='com.baidu.mapsdkplatform.comapi.map']/class[@name='q']"
+    name="obfuscated">false</attr>
+  <attr path="/api/package[@name='com.baidu.mapsdkplatform.comapi.map']/class[@name='t']"
+    name="obfuscated">false</attr>
+
+  <attr path="/api/package[@name='com.baidu.mapapi.search.core']/class[@name='e']"
+    name="obfuscated">false</attr>
+
+  <attr path="/api/package[@name='com.baidu.mapapi.search.core']/class[@name='m']"
+    name="obfuscated">false</attr>
+
+  <attr path="/api/package[@name='com.baidu.mapapi.search.core']/class[@name='k']"
+    name="obfuscated">false</attr>
+
+  <attr path="/api/package[@name='com.baidu.mapapi.search.core']/class[@name='e']"
+    name="managedName">TheE</attr>
+
+  <attr path="/api/package[@name='com.baidu.mapapi.search.district']/class[@name='DistrictSearch']"
+    name="managedName">TheDistrictSearch</attr>
+
+  <attr path="/api/package[@name='com.baidu.platform.comapi.walknavi.e']/interface[@name='c']"
+    name="obfuscated">false</attr>
+
+  <attr path="/api/package[@name='com.baidu.mapsdkplatform.comapi.util']/interface[@name='PermissionCheck.c']"
+    name="obfuscated">false</attr>
+
+  <attr path="/api/package[@name='com.baidu.mapsdkplatform.comapi.util']/class[@name='PermissionCheck.b']"
+    name="obfuscated">false</attr>
+  <attr path="/api/package[@name='com.baidu.mapsdkplatform.comapi.util']/class[@name='PermissionCheck.b']"
+    name="managedName">PermissionCheckB</attr>
+
+  <attr path="/api/package[@name='com.baidu.mapsdkvi']/class[@name='c']"
+    name="obfuscated">false</attr>
+  <attr path="/api/package[@name='com.baidu.mapsdkvi']/class[@name='c']"
+    name="managedName">MapsdkviC</attr>
+
+  <attr path="/api/package[@name='com.baidu.platform.comapi.wnplatform.n']/class[@name='b']"
+    name="obfuscated">false</attr>
+  <attr path="/api/package[@name='com.baidu.platform.comapi.wnplatform.n']/class[@name='b']"
+    name="managedName">WnplatformNB</attr>
+
+  <attr path="/api/package[@name='com.baidu.platform.comapi.bikenavi.widget']/interface[@name='CustomScrollView.b']"
+    name="obfuscated">false</attr>
+  <attr path="/api/package[@name='com.baidu.platform.comapi.bikenavi.widget']/interface[@name='CustomScrollView.b']"
+    name="managedName">CustomScrollViewB</attr>
+
+  <attr path="/api/package[@name='com.baidu.platform.comapi.wnplatform.m']/interface[@name='b']"
+    name="obfuscated">false</attr>
+
+  <attr path="/api/package[@name='com.baidu.platform.comapi.radar']/interface[@name='b']"
+    name="obfuscated">false</attr>
+  <attr path="/api/package[@name='com.baidu.platform.comapi.radar']/interface[@name='b']"
+    name="managedName">RadarB</attr>
+
+  <attr path="/api/package[@name='com.baidu.platform.comapi.wnplatform.walkmap']/interface[@name='f']"
+      name="obfuscated">false</attr>
+
+  <attr path="/api/package[@name='com.baidu.platform.comapi.walknavi']/class[@name='b']/method[@name='l' and count(parameter)=0]"
+     name="managedName">TheWalknaviBL1</attr>
+
+  <attr path="/api/package[@name='com.baidu.platform.comapi.wnplatform.n']/class[@name='a']"
+            name="obfuscated">false</attr>
+  <attr path="/api/package[@name='com.baidu.platform.comapi.wnplatform.n']/class[@name='a']"
+     name="managedName">TheWnplatformNA</attr>
+
+  <attr path="/api/package[@name='com.baidu.platform.comapi.wnplatform.i']/interface[@name='a']"
+            name="obfuscated">false</attr>
+  <attr path="/api/package[@name='com.baidu.platform.comapi.wnplatform.i']/interface[@name='a']"
+  name="managedName">TheWnplatformIA</attr>
+
+  <attr path="/api/package[@name='com.baidu.platform.comapi.wnplatform.d']/class[@name='a']"
+          name="obfuscated">false</attr>
+  <attr path="/api/package[@name='com.baidu.platform.comapi.wnplatform.d']/class[@name='a']"
+  name="managedName">TheWnplatformDA</attr>
+  <attr path="/api/package[@name='com.baidu.platform.comapi.wnplatform.d']/class[@name='d']"
+          name="obfuscated">false</attr>
+  <attr path="/api/package[@name='com.baidu.platform.comapi.wnplatform.d']/class[@name='d']"
+  name="managedName">TheWnplatformDD</attr>
+
+  <attr path="/api/package[@name='com.baidu.platform.comapi.walknavi']/class[@name='b']/method[@name='m' and count(parameter)=0]"
+      name="managedName">WalknaviBLittleM</attr>
+  <attr path="/api/package[@name='com.baidu.platform.comapi.walknavi']/class[@name='b']/method[@name='M' and count(parameter)=0]"
+      name="managedName">WalknaviBBigM</attr>
+
+  <attr path="/api/package[@name='com.baidu.platform.comapi.wnplatform.d']/class[@name='b']"
+          name="obfuscated">false</attr>
+  <attr path="/api/package[@name='com.baidu.platform.comapi.wnplatform.d']/class[@name='b']"
+  name="managedName">TheWnplatformDB</attr>
+
+  <attr path="/api/package[@name='com.baidu.platform.comapi.wnplatform.b']/interface[@name='b']"
+          name="obfuscated">false</attr>
+  <attr path="/api/package[@name='com.baidu.platform.comapi.wnplatform.b']/interface[@name='b']"
+    name="managedName">TheBB</attr>
+
+  <attr path="/api/package[@name='com.baidu.platform.comapi.wnplatform.l']/class[@name='a']"
+        name="obfuscated">false</attr>
+  <attr path="/api/package[@name='com.baidu.platform.comapi.wnplatform.l']/class[@name='a']"
+    name="managedName">TheLA</attr>
+  <attr path="/api/package[@name='com.baidu.platform.comapi.walknavi']/class[@name='b']/method[@name='N' and count(parameter)=0]"
+    name="managedName">BigN</attr>
+  <attr path="/api/package[@name='com.baidu.platform.comapi.walknavi']/class[@name='b']/method[@name='n' and count(parameter)=0]"
+    name="managedName">LittleN</attr>
+
+  <attr path="/api/package[@name='com.baidu.platform.comapi.wnplatform.d.a']/class[@name='a']"
+        name="obfuscated">false</attr>
+  <attr path="/api/package[@name='com.baidu.platform.comapi.wnplatform.d.a']/class[@name='a']"
+  name="managedName">TheDAA</attr>
+
+  <attr path="/api/package[@name='com.baidu.platform.comapi.wnplatform.f']/class[@name='b']"
+        name="obfuscated">false</attr>
+  <attr path="/api/package[@name='com.baidu.platform.comapi.wnplatform.f']/class[@name='b']"
+    name="managedName">TheFB</attr>
+  <attr path="/api/package[@name='com.baidu.platform.comapi.wnplatform.b']/interface[@name='a']"
+        name="obfuscated">false</attr>
+  <attr path="/api/package[@name='com.baidu.platform.comapi.wnplatform.b']/interface[@name='a']"
+    name="managedName">TheBA</attr>
+
+  <attr path="/api/package[@name='com.baidu.platform.comapi.wnplatform.m']/interface[@name='c']"
+          name="obfuscated">false</attr>
+  <attr path="/api/package[@name='com.baidu.platform.comapi.wnplatform.m']/interface[@name='c']"
+    name="managedName">TheMC</attr>
+
+  <attr path="/api/package[@name='com.baidu.platform.comapi.walknavi.c']/interface[@name='a']"
+          name="obfuscated">false</attr>
+  <attr path="/api/package[@name='com.baidu.platform.comapi.walknavi.c']/interface[@name='a']"
+    name="managedName">TheCA</attr>
+
+  <attr path="/api/package[@name='com.baidu.platform.comapi.walknavi.c']/class[@name='b']"
+          name="obfuscated">false</attr>
+  <attr path="/api/package[@name='com.baidu.platform.comapi.walknavi.c']/class[@name='b']"
+    name="managedName">TheCB</attr>
+
+  <attr path="/api/package[@name='com.baidu.platform.comapi.wnplatform.i']/interface[@name='a']"
+            name="obfuscated">false</attr>
+  <attr path="/api/package[@name='com.baidu.platform.comapi.wnplatform.i']/interface[@name='a']"
+      name="managedName">TheIA</attr>
+
+  <attr path="/api/package[@name='com.baidu.platform.comapi.wnplatform.i']/class[@name='b']"
+            name="obfuscated">false</attr>
+  <attr path="/api/package[@name='com.baidu.platform.comapi.wnplatform.i']/class[@name='b']"
+      name="managedName">TheIB</attr>
+
+  <attr path="/api/package[@name='com.baidu.platform.comapi.wnplatform.a']/class[@name='a']"
+            name="obfuscated">false</attr>
+  <attr path="/api/package[@name='com.baidu.platform.comapi.wnplatform.a']/class[@name='a']"
+      name="managedName">TheAA</attr>
+
+  <attr path="/api/package[@name='com.baidu.platform.comapi.wnplatform.h']/interface[@name='a']"
+            name="obfuscated">false</attr>
+  <attr path="/api/package[@name='com.baidu.platform.comapi.wnplatform.h']/interface[@name='a']"
+      name="managedName">TheA</attr>
+
+  <attr path="/api/package[@name='com.baidu.platform.comapi.wnplatform.h']/interface[@name='b']"
+          name="obfuscated">false</attr>
+  <attr path="/api/package[@name='com.baidu.platform.comapi.wnplatform.h']/interface[@name='b']"
+      name="managedName">TheB</attr>
+
+  <attr path="/api/package[@name='com.baidu.platform.comapi.wnplatform.h']/class[@name='e']"
+          name="obfuscated">false</attr>
+  <attr path="/api/package[@name='com.baidu.platform.comapi.wnplatform.h']/class[@name='e']"
+      name="managedName">TheE</attr>
+
+  <attr path="/api/package[@name='com.baidu.mapapi.map']/class[@name='f']"
+          name="obfuscated">false</attr>
+  <attr path="/api/package[@name='com.baidu.mapapi.map']/class[@name='f']"
+        name="visibility">public</attr>
+  <attr path="/api/package[@name='com.baidu.mapapi.map']/class[@name='f']"
+      name="managedName">MapF</attr>
+
+  <attr path="/api/package[@name='com.baidu.platform.comapi.wnplatform.b']/class[@name='c']"
+            name="obfuscated">false</attr>
+  <attr path="/api/package[@name='com.baidu.platform.comapi.wnplatform.b']/class[@name='c']"
+      name="managedName">TheWnplatformBC</attr>
+
+  <attr path="/api/package[@name='com.baidu.platform.comapi.walknavi']/class[@name='b']/method[@name='k' and count(parameter)=0]"
+        name="managedName">TheWalknaviBK1</attr>
+
+  <attr path="/api/package[@name='com.baidu.platform.comapi.wnplatform.j']/class[@name='a']"
+              name="obfuscated">false</attr>
+  <attr path="/api/package[@name='com.baidu.platform.comapi.wnplatform.j']/class[@name='a']"
+      name="managedName">TheWnplatformJA</attr>
+
+  <attr path="/api/package[@name='com.baidu.platform.comapi.wnplatform.j']/class[@name='c']"
+              name="obfuscated">false</attr>
+  <attr path="/api/package[@name='com.baidu.platform.comapi.wnplatform.j']/class[@name='c']"
+      name="managedName">TheWnplatformJC</attr>
+  <attr path="/api/package[@name='com.baidu.platform.comapi.walknavi']/class[@name='b']/method[@name='j' and count(parameter)=0]"
+        name="managedName">TheWalknaviBJ1</attr>
+
+  <attr path="/api/package[@name='com.baidu.platform.comapi.wnplatform.j']/interface[@name='b']"
+                name="obfuscated">false</attr>
+
+  <attr path="/api/package[@name='com.baidu.platform.comapi.wnplatform.d.a']/class[@name='b']"
+                  name="obfuscated">false</attr>
+  <attr path="/api/package[@name='com.baidu.platform.comapi.wnplatform.d.a']/class[@name='b']"
+        name="managedName">TheWnplatformDAB</attr>
+
+  <attr path="/api/package[@name='com.baidu.platform.comapi.wnplatform.m']/class[@name='a']"
+                    name="obfuscated">false</attr>
+  <attr path="/api/package[@name='com.baidu.platform.comapi.wnplatform.m']/class[@name='a']"
+        name="managedName">TheWnplatformMA</attr>
+
+  <attr path="/api/package[@name='com.baidu.platform.comapi.walknavi']/class[@name='b']/method[@name='d' and count(parameter)=0]"
+          name="managedName">TheWalknaviBD1</attr>
+
+  <attr path="/api/package[@name='com.baidu.platform.comapi.wnplatform.o']/class[@name='k']"
+                      name="obfuscated">false</attr>
+  <attr path="/api/package[@name='com.baidu.platform.comapi.wnplatform.o']/class[@name='k']"
+        name="managedName">TheWnplatformOK</attr>
+
+  <attr path="/api/package[@name='com.baidu.platform.comapi.walknavi']/class[@name='b']/method[@name='c' and count(parameter)=0]"
+            name="managedName">TheWalknaviBC1</attr>
+
+  <attr path="/api/package[@name='com.baidu.mapsdkplatform.comapi.map']/class[@name='i']"
+        name="obfuscated">false</attr>
+
+
+  <!--关联1-->
+  <!--
+  <attr path="/api/package[@name='com.baidu.mapapi.search.core']/class[@name='k']"
+    name="obfuscated">false</attr>
+
+  <attr path="/api/package[@name='com.baidu.mapapi.search.district']/class[@name='DistrictSearch']"
+      name="managedName">TheDistrictSearch</attr>-->
+  <!--关联1-->
+
+
+
+</metadata>
