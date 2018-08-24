@@ -1,0 +1,221 @@
+﻿<metadata>
+  <!--
+  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
+  
+  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
+  -->
+
+  <!--CopyObjectRequest-->
+  <attr path="/api/package[@name='com.baidubce.services.bos.model']/class[@name='CopyObjectRequest']/method[@name='withBucketName']"
+    name="managedName">RawWithBucketName</attr>
+  <attr path="/api/package[@name='com.baidubce.services.bos.model']/class[@name='CopyObjectRequest']/method[@name='withKey']"
+        name="managedName">RawWithKey</attr>
+  <attr path="/api/package[@name='com.baidubce.services.bos.model']/class[@name='CopyObjectRequest']/method[@name='withRequestCredentials']"
+        name="managedName">RawWithRequestCredentials</attr>
+  <!--CopyObjectRequest-->
+
+  <!--ClientListener-->
+  <remove-node path="/api/package[@name='com.baidu.trace']/class[@name='LBSTraceClient.ClientListener']/method[@name='gatherAttribute' and count(parameter)=1 and parameter[1][@type='long']]" />
+  <!--ClientListener-->
+
+  <!--GenericAccountRequest-->
+  <attr path="/api/package[@name='com.baidubce.model']/class[@name='GenericAccountRequest']/method[@name='withRequestCredentials' and count(parameter)=1 and parameter[1][@type='com.baidubce.auth.BceCredentials']]"
+        name="managedName">RawWithRequestCredentials</attr>
+  <!--GenericAccountRequest-->
+
+  <!--AbortMultipartUploadRequest-->
+  <attr path="/api/package[@name='com.baidubce.services.bos.model']/class[@name='AbortMultipartUploadRequest']/method[@name='withBucketName' and count(parameter)=1 and parameter[1][@type='java.lang.String']]"
+        name="managedName">RawWithBucketName</attr>
+  <attr path="/api/package[@name='com.baidubce.services.bos.model']/class[@name='AbortMultipartUploadRequest']/method[@name='withKey' and count(parameter)=1 and parameter[1][@type='java.lang.String']]"
+        name="managedName">RawWithKey</attr>
+  <attr path="/api/package[@name='com.baidubce.services.bos.model']/class[@name='AbortMultipartUploadRequest']/method[@name='withRequestCredentials' and count(parameter)=1 and parameter[1][@type='com.baidubce.auth.BceCredentials']]"
+        name="managedName">RawWithRequestCredentials</attr>
+  <attr path="/api/package[@name='com.baidubce.services.bos.model']/class[@name='AbortMultipartUploadRequest']/method[@name='withUploadId' and count(parameter)=1 and parameter[1][@type='java.lang.String']]"
+        name="managedName">RawWithUploadId</attr>
+  <!--AbortMultipartUploadRequest-->
+
+  <!--IOnCustomAttributeListener-->
+  <attr path="/api/package[@name='com.baidu.trace.model']/interface[@name='OnCustomAttributeListener']/method[@name='onTrackAttributeCallback' and count(parameter)=1 and parameter[1][@type='long']]"
+          name="managedName">OnTrackAttributeCallback2</attr>
+  <!--IOnCustomAttributeListener-->
+
+  <!--CompleteMultipartUploadRequest-->
+  <attr path="/api/package[@name='com.baidubce.services.bos.model']/class[@name='CompleteMultipartUploadRequest']/method[@name='withBucketName' and count(parameter)=1 and parameter[1][@type='java.lang.String']]"
+          name="managedName">RawWithBucketName</attr>
+  <attr path="/api/package[@name='com.baidubce.services.bos.model']/class[@name='CompleteMultipartUploadRequest']/method[@name='withKey' and count(parameter)=1 and parameter[1][@type='java.lang.String']]"
+        name="managedName">RawWithKey</attr>
+  <attr path="/api/package[@name='com.baidubce.services.bos.model']/class[@name='CompleteMultipartUploadRequest']/method[@name='withRequestCredentials' and count(parameter)=1 and parameter[1][@type='com.baidubce.auth.BceCredentials']]"
+        name="managedName">RawWithRequestCredentials</attr>
+  <attr path="/api/package[@name='com.baidubce.services.bos.model']/class[@name='CompleteMultipartUploadRequest']/method[@name='withUploadId' and count(parameter)=1 and parameter[1][@type='java.lang.String']]"
+        name="managedName">RawWithUploadId</attr>
+  <!--CompleteMultipartUploadRequest-->
+
+  <!--GetSessionTokenRequest-->
+  <attr path="/api/package[@name='com.baidubce.services.sts.model']/class[@name='GetSessionTokenRequest']/method[@name='withRequestCredentials' and count(parameter)=1 and parameter[1][@type='com.baidubce.auth.BceCredentials']]"
+        name="managedName">RawWithRequestCredentials</attr>
+  <!--GetSessionTokenRequest-->
+
+  <!--ResponseHeaderOverrides-->
+  <attr path="/api/package[@name='com.baidubce.services.bos.model']/class[@name='ResponseHeaderOverrides']/method[@name='withRequestCredentials' and count(parameter)=1 and parameter[1][@type='com.baidubce.auth.BceCredentials']]"
+        name="managedName">RawWithRequestCredentials</attr>
+  <!--ResponseHeaderOverrides-->
+
+  <!--ListBucketsRequest-->
+  <attr path="/api/package[@name='com.baidubce.services.bos.model']/class[@name='ListBucketsRequest']/method[@name='withRequestCredentials' and count(parameter)=1 and parameter[1][@type='com.baidubce.auth.BceCredentials']]"
+        name="managedName">RawWithRequestCredentials</attr>
+  <!--ListBucketsRequest-->
+
+  <!--UploadPartRequest-->
+  <attr path="/api/package[@name='com.baidubce.services.bos.model']/class[@name='UploadPartRequest']/method[@name='withBucketName' and count(parameter)=1 and parameter[1][@type='java.lang.String']]"
+        name="managedName">RawWithBucketName</attr>
+  <attr path="/api/package[@name='com.baidubce.services.bos.model']/class[@name='UploadPartRequest']/method[@name='withKey' and count(parameter)=1 and parameter[1][@type='java.lang.String']]"
+        name="managedName">RawWithKey</attr>
+  <attr path="/api/package[@name='com.baidubce.services.bos.model']/class[@name='UploadPartRequest']/method[@name='withRequestCredentials' and count(parameter)=1 and parameter[1][@type='com.baidubce.auth.BceCredentials']]"
+        name="managedName">RawWithRequestCredentials</attr>
+  <attr path="/api/package[@name='com.baidubce.services.bos.model']/class[@name='UploadPartRequest']/method[@name='withUploadId' and count(parameter)=1 and parameter[1][@type='java.lang.String']]"
+        name="managedName">RawWithUploadId</attr>
+  <!--UploadPartRequest-->
+
+  <!--CreateBucketRequest-->
+  <attr path="/api/package[@name='com.baidubce.services.bos.model']/class[@name='CreateBucketRequest']/method[@name='withBucketName' and count(parameter)=1 and parameter[1][@type='java.lang.String']]"
+        name="managedName">RawWithBucketName</attr>
+  <attr path="/api/package[@name='com.baidubce.services.bos.model']/class[@name='CreateBucketRequest']/method[@name='withRequestCredentials' and count(parameter)=1 and parameter[1][@type='com.baidubce.auth.BceCredentials']]"
+        name="managedName">RawWithRequestCredentials</attr>
+  <!--CreateBucketRequest-->
+
+
+  <!--DeleteBucketRequest-->
+  <attr path="/api/package[@name='com.baidubce.services.bos.model']/class[@name='DeleteBucketRequest']/method[@name='withBucketName' and count(parameter)=1 and parameter[1][@type='java.lang.String']]"
+        name="managedName">RawWithBucketName</attr>
+  <attr path="/api/package[@name='com.baidubce.services.bos.model']/class[@name='DeleteBucketRequest']/method[@name='withRequestCredentials' and count(parameter)=1 and parameter[1][@type='com.baidubce.auth.BceCredentials']]"
+        name="managedName">RawWithRequestCredentials</attr>
+  <!--DeleteBucketRequest-->
+
+  <!--DeleteObjectRequest-->
+  <attr path="/api/package[@name='com.baidubce.services.bos.model']/class[@name='DeleteObjectRequest']/method[@name='withBucketName' and count(parameter)=1 and parameter[1][@type='java.lang.String']]"
+        name="managedName">RawWithBucketName</attr>
+  <attr path="/api/package[@name='com.baidubce.services.bos.model']/class[@name='DeleteObjectRequest']/method[@name='withKey' and count(parameter)=1 and parameter[1][@type='java.lang.String']]"
+        name="managedName">RawWithKey</attr>
+  <attr path="/api/package[@name='com.baidubce.services.bos.model']/class[@name='DeleteObjectRequest']/method[@name='withRequestCredentials' and count(parameter)=1 and parameter[1][@type='com.baidubce.auth.BceCredentials']]"
+        name="managedName">RawWithRequestCredentials</attr>
+  <!--DeleteObjectRequest-->
+
+  <!--ListPartsRequest-->
+  <attr path="/api/package[@name='com.baidubce.services.bos.model']/class[@name='ListPartsRequest']/method[@name='withBucketName' and count(parameter)=1 and parameter[1][@type='java.lang.String']]"
+        name="managedName">RawWithBucketName</attr>
+  <attr path="/api/package[@name='com.baidubce.services.bos.model']/class[@name='ListPartsRequest']/method[@name='withKey' and count(parameter)=1 and parameter[1][@type='java.lang.String']]"
+        name="managedName">RawWithKey</attr>
+  <attr path="/api/package[@name='com.baidubce.services.bos.model']/class[@name='ListPartsRequest']/method[@name='withRequestCredentials' and count(parameter)=1 and parameter[1][@type='com.baidubce.auth.BceCredentials']]"
+        name="managedName">RawWithRequestCredentials</attr>
+  <attr path="/api/package[@name='com.baidubce.services.bos.model']/class[@name='ListPartsRequest']/method[@name='withUploadId' and count(parameter)=1 and parameter[1][@type='java.lang.String']]"
+        name="managedName">RawWithUploadId</attr>
+  <!--ListPartsRequest-->
+
+  <!--GetObjectRequest-->
+  <attr path="/api/package[@name='com.baidubce.services.bos.model']/class[@name='GetObjectRequest']/method[@name='withBucketName' and count(parameter)=1 and parameter[1][@type='java.lang.String']]"
+        name="managedName">RawWithBucketName</attr>
+  <attr path="/api/package[@name='com.baidubce.services.bos.model']/class[@name='GetObjectRequest']/method[@name='withKey' and count(parameter)=1 and parameter[1][@type='java.lang.String']]"
+        name="managedName">RawWithKey</attr>
+  <attr path="/api/package[@name='com.baidubce.services.bos.model']/class[@name='GetObjectRequest']/method[@name='withRequestCredentials' and count(parameter)=1 and parameter[1][@type='com.baidubce.auth.BceCredentials']]"
+        name="managedName">RawWithRequestCredentials</attr>
+  <!--GetObjectRequest-->
+
+  <!--PutObjectRequest-->
+  <attr path="/api/package[@name='com.baidubce.services.bos.model']/class[@name='PutObjectRequest']/method[@name='withBucketName' and count(parameter)=1 and parameter[1][@type='java.lang.String']]"
+        name="managedName">RawWithBucketName</attr>
+  <attr path="/api/package[@name='com.baidubce.services.bos.model']/class[@name='PutObjectRequest']/method[@name='withKey' and count(parameter)=1 and parameter[1][@type='java.lang.String']]"
+        name="managedName">RawWithKey</attr>
+  <attr path="/api/package[@name='com.baidubce.services.bos.model']/class[@name='PutObjectRequest']/method[@name='withRequestCredentials' and count(parameter)=1 and parameter[1][@type='com.baidubce.auth.BceCredentials']]"
+        name="managedName">RawWithRequestCredentials</attr>
+  <!--PutObjectRequest-->
+
+  <!--InitiateMultipartUploadRequest-->
+  <attr path="/api/package[@name='com.baidubce.services.bos.model']/class[@name='InitiateMultipartUploadRequest']/method[@name='withBucketName' and count(parameter)=1 and parameter[1][@type='java.lang.String']]"
+        name="managedName">RawWithBucketName</attr>
+  <attr path="/api/package[@name='com.baidubce.services.bos.model']/class[@name='InitiateMultipartUploadRequest']/method[@name='withKey' and count(parameter)=1 and parameter[1][@type='java.lang.String']]"
+        name="managedName">RawWithKey</attr>
+  <attr path="/api/package[@name='com.baidubce.services.bos.model']/class[@name='InitiateMultipartUploadRequest']/method[@name='withRequestCredentials' and count(parameter)=1 and parameter[1][@type='com.baidubce.auth.BceCredentials']]"
+        name="managedName">RawWithRequestCredentials</attr>
+  <!--InitiateMultipartUploadRequest-->
+
+  <!--DoesBucketExistRequest-->
+  <attr path="/api/package[@name='com.baidubce.services.bos.model']/class[@name='DoesBucketExistRequest']/method[@name='withBucketName' and count(parameter)=1 and parameter[1][@type='java.lang.String']]"
+        name="managedName">RawWithBucketName</attr>
+  <attr path="/api/package[@name='com.baidubce.services.bos.model']/class[@name='DoesBucketExistRequest']/method[@name='withRequestCredentials' and count(parameter)=1 and parameter[1][@type='com.baidubce.auth.BceCredentials']]"
+        name="managedName">RawWithRequestCredentials</attr>
+  <!--DoesBucketExistRequest-->
+
+  <!--SetBucketAclRequest-->
+  <attr path="/api/package[@name='com.baidubce.services.bos.model']/class[@name='SetBucketAclRequest']/method[@name='withBucketName' and count(parameter)=1 and parameter[1][@type='java.lang.String']]"
+        name="managedName">RawWithBucketName</attr>
+  <attr path="/api/package[@name='com.baidubce.services.bos.model']/class[@name='SetBucketAclRequest']/method[@name='withRequestCredentials' and count(parameter)=1 and parameter[1][@type='com.baidubce.auth.BceCredentials']]"
+        name="managedName">RawWithRequestCredentials</attr>
+  <!--SetBucketAclRequest-->
+
+  <!--ListObjectsRequest-->
+  <attr path="/api/package[@name='com.baidubce.services.bos.model']/class[@name='ListObjectsRequest']/method[@name='withBucketName' and count(parameter)=1 and parameter[1][@type='java.lang.String']]"
+        name="managedName">RawWithBucketName</attr>
+  <attr path="/api/package[@name='com.baidubce.services.bos.model']/class[@name='ListObjectsRequest']/method[@name='withRequestCredentials' and count(parameter)=1 and parameter[1][@type='com.baidubce.auth.BceCredentials']]"
+        name="managedName">RawWithRequestCredentials</attr>
+  <!--ListObjectsRequest-->
+
+  <!--ListMultipartUploadsRequest-->
+  <attr path="/api/package[@name='com.baidubce.services.bos.model']/class[@name='ListMultipartUploadsRequest']/method[@name='withBucketName' and count(parameter)=1 and parameter[1][@type='java.lang.String']]"
+        name="managedName">RawWithBucketName</attr>
+  <attr path="/api/package[@name='com.baidubce.services.bos.model']/class[@name='ListMultipartUploadsRequest']/method[@name='withRequestCredentials' and count(parameter)=1 and parameter[1][@type='com.baidubce.auth.BceCredentials']]"
+        name="managedName">RawWithRequestCredentials</attr>
+  <!--ListMultipartUploadsRequest-->
+
+  <!--GetObjectMetadataRequest-->
+  <attr path="/api/package[@name='com.baidubce.services.bos.model']/class[@name='GetObjectMetadataRequest']/method[@name='withBucketName' and count(parameter)=1 and parameter[1][@type='java.lang.String']]"
+        name="managedName">RawWithBucketName</attr>
+  <attr path="/api/package[@name='com.baidubce.services.bos.model']/class[@name='GetObjectMetadataRequest']/method[@name='withKey' and count(parameter)=1 and parameter[1][@type='java.lang.String']]"
+        name="managedName">RawWithKey</attr>
+  <attr path="/api/package[@name='com.baidubce.services.bos.model']/class[@name='GetObjectMetadataRequest']/method[@name='withRequestCredentials' and count(parameter)=1 and parameter[1][@type='com.baidubce.auth.BceCredentials']]"
+        name="managedName">RawWithRequestCredentials</attr>
+  <!--GetObjectMetadataRequest-->
+
+  <!--GetBucketAclRequest-->
+  <attr path="/api/package[@name='com.baidubce.services.bos.model']/class[@name='GetBucketAclRequest']/method[@name='withBucketName' and count(parameter)=1 and parameter[1][@type='java.lang.String']]"
+        name="managedName">RawWithBucketName</attr>
+  <attr path="/api/package[@name='com.baidubce.services.bos.model']/class[@name='GetBucketAclRequest']/method[@name='withRequestCredentials' and count(parameter)=1 and parameter[1][@type='com.baidubce.auth.BceCredentials']]"
+        name="managedName">RawWithRequestCredentials</attr>
+  <!--GetBucketAclRequest-->
+
+  <!--GetBucketLocationRequest-->
+  <attr path="/api/package[@name='com.baidubce.services.bos.model']/class[@name='GetBucketLocationRequest']/method[@name='withBucketName' and count(parameter)=1 and parameter[1][@type='java.lang.String']]"
+        name="managedName">RawWithBucketName</attr>
+  <attr path="/api/package[@name='com.baidubce.services.bos.model']/class[@name='GetBucketLocationRequest']/method[@name='withRequestCredentials' and count(parameter)=1 and parameter[1][@type='com.baidubce.auth.BceCredentials']]"
+        name="managedName">RawWithRequestCredentials</attr>
+  <!--GetBucketLocationRequest-->
+
+  <!--GetBosAccountOwnerRequest-->
+  <attr path="/api/package[@name='com.baidubce.services.bos.model']/class[@name='GetBosAccountOwnerRequest']/method[@name='withRequestCredentials' and count(parameter)=1 and parameter[1][@type='com.baidubce.auth.BceCredentials']]"
+        name="managedName">RawWithRequestCredentials</attr>
+  <!--GetBosAccountOwnerRequest-->
+
+  <!--GeneratePresignedUrlRequest-->
+  <attr path="/api/package[@name='com.baidubce.services.bos.model']/class[@name='GeneratePresignedUrlRequest']/method[@name='withRequestCredentials' and count(parameter)=1 and parameter[1][@type='com.baidubce.auth.BceCredentials']]"
+        name="managedName">RawWithRequestCredentials</attr>
+  <!--GeneratePresignedUrlRequest-->
+
+  <attr path="/api/package[@name='com.baidu.trace.api.fence']/class[@name='Fence']"
+    name="managedName">TheFence</attr>
+
+  <attr path="/api/package[@name='com.baidu.trace']/class[@name='Trace']"
+    name="managedName">TheTrace</attr>
+
+  <!--more than 16 parameter error-->
+  <remove-node path="/api/package[@name='com.baidu.trace.api.analysis']/class[@name='DrivingBehaviorResponse']/constructor[@name='DrivingBehaviorResponse' and count(parameter)=17]" />
+  <!--more than 16 parameter error-->
+
+  <attr path="/api/package[@name='com.baidu.trace.c']/class[@name='f']"
+    name="obfuscated">false</attr>
+  <attr path="/api/package[@name='com.baidu.trace.c']/class[@name='f.a']"
+    name="obfuscated">false</attr>
+  <attr path="/api/package[@name='com.baidu.trace.c']/class[@name='f.a']"
+    name="managedName">TheFA</attr>
+  
+</metadata>

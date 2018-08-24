@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DDAB2A7F-6B2E-40EC-AAB0-A740A72F2138}</ProjectGuid>
+    <ProjectTypeGuids>{10368E6C-D01B-4462-8E8B-01FC667A7035};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TemplateGuid>{77efb91c-a7e9-4b0e-a7c5-31eeec3c6d46}</TemplateGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BaiduTraceBinding</RootNamespace>
+    <AssemblyName>BaiduTraceBinding</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
+    <TargetFrameworkVersion>v7.1</TargetFrameworkVersion>
+    <AndroidClassParser>class-parse</AndroidClassParser>
+    <AndroidCodegenTarget>XAJavaInterop1</AndroidCodegenTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>portable</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Mono.Android" />
+    <Reference Include="Square.OkHttp3, Version=3.8.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Square.OkHttp3.3.8.1\lib\MonoAndroid\Square.OkHttp3.dll</HintPath>
+    </Reference>
+    <Reference Include="Square.OkIO, Version=1.13.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Square.OkIO.1.13.0\lib\MonoAndroid\Square.OkIO.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Additions\AbortMultipartUploadRequest.cs" />
+    <Compile Include="Additions\ClientListener.cs" />
+    <Compile Include="Additions\CompleteMultipartUploadRequest.cs" />
+    <Compile Include="Additions\CopyObjectRequest.cs" />
+    <Compile Include="Additions\CreateBucketRequest.cs" />
+    <Compile Include="Additions\DeleteBucketRequest.cs" />
+    <Compile Include="Additions\DeleteObjectRequest.cs" />
+    <Compile Include="Additions\DoesBucketExistRequest.cs" />
+    <Compile Include="Additions\DrivingBehaviorResponse.cs" />
+    <Compile Include="Additions\GeneratePresignedUrlRequest.cs" />
+    <Compile Include="Additions\GenericAccountRequest.cs" />
+    <Compile Include="Additions\GetBosAccountOwnerRequest.cs" />
+    <Compile Include="Additions\GetBucketAclRequest.cs" />
+    <Compile Include="Additions\GetBucketLocationRequest.cs" />
+    <Compile Include="Additions\GetObjectMetadataRequest.cs" />
+    <Compile Include="Additions\GetObjectRequest.cs" />
+    <Compile Include="Additions\GetSessionTokenRequest.cs" />
+    <Compile Include="Additions\InitiateMultipartUploadRequest.cs" />
+    <Compile Include="Additions\ListBucketsRequest.cs" />
+    <Compile Include="Additions\ListMultipartUploadsRequest.cs" />
+    <Compile Include="Additions\ListObjectsRequest.cs" />
+    <Compile Include="Additions\ListPartsRequest.cs" />
+    <Compile Include="Additions\PutObjectRequest.cs" />
+    <Compile Include="Additions\ResponseHeaderOverrides.cs" />
+    <Compile Include="Additions\SetBucketAclRequest.cs" />
+    <Compile Include="Additions\UploadPartRequest.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Jars\AboutJars.txt" />
+    <None Include="Additions\AboutAdditions.txt" />
+    <EmbeddedNativeLibrary Include="lib\arm64-v8a\libBaiduTraceSDK_v3_0_7.so" />
+    <EmbeddedNativeLibrary Include="lib\armeabi-v7a\libBaiduTraceSDK_v3_0_7.so" />
+    <EmbeddedNativeLibrary Include="lib\armeabi\libBaiduTraceSDK_v3_0_7.so" />
+    <EmbeddedNativeLibrary Include="lib\x86\libBaiduTraceSDK_v3_0_7.so" />
+    <EmbeddedNativeLibrary Include="lib\x86_64\libBaiduTraceSDK_v3_0_7.so" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <TransformFile Include="Transforms\Metadata.xml">
+      <SubType>Designer</SubType>
+    </TransformFile>
+    <TransformFile Include="Transforms\EnumFields.xml" />
+    <TransformFile Include="Transforms\EnumMethods.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedJar Include="Jars\BaiduTraceSDK_v3_0_7.jar" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedJar Include="Jars\bos-android-sdk-1.0.3.jar" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

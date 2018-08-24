@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2003
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaiduTraceBinding", "BaiduTraceBinding\BaiduTraceBinding.csproj", "{DDAB2A7F-6B2E-40EC-AAB0-A740A72F2138}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DDAB2A7F-6B2E-40EC-AAB0-A740A72F2138}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDAB2A7F-6B2E-40EC-AAB0-A740A72F2138}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDAB2A7F-6B2E-40EC-AAB0-A740A72F2138}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDAB2A7F-6B2E-40EC-AAB0-A740A72F2138}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BE17D0B1-481A-497D-A626-B0B29422FE19}
+	EndGlobalSection
+EndGlobal
