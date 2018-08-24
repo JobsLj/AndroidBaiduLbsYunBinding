@@ -18,3 +18,7 @@
 
 鹰眼轨迹SDK 3.0.7
 
+
+如果有安卓绑定方面的问题可以参考博客:
+
+https://www.cnblogs.com/ericcui/p/9305689.html
